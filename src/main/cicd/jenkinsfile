@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    environment {
+        mavenHome = tool 'MAVEN'
+    }
+
 
 
     stages {
