@@ -12,8 +12,7 @@ pipeline {
         stage('Build'){
             steps {
 
-                echo M2_HOME
-                echo JAVA_HOME
+
                 sh "mvn clean install -DskipTests"
             }
         }
