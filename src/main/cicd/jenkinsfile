@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    environment {
+        mavenHome = tool 'jenkins-maven'
+    }
+
+
+
+    stages {
+
+        stage('Build'){
+            steps {
+                echo mavenHome
+                bat "mvn clean install -DskipTests"
+            }
+        }
+
+
+    }
+}
