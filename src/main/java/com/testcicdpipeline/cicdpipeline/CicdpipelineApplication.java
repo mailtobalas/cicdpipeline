@@ -9,7 +9,7 @@ public class CicdpipelineApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CicdpipelineApplication.class, args);
 
-		System.out.println("test testing...");
+		System.out.println("test testing1...");
 	}
 
 }
